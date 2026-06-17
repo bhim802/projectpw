@@ -1,9 +1,30 @@
-body {
-    background-image: url(assets/chunli2.png);
-    background-color: black;
+/*pengaturan posisi image image */
+.bg-section {
+    height: 100vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
     background-size: cover;
     
 }
+
+/*first image */
+.section-1 {
+    background-color: black;
+    background-image: url(assets/chunli3.png);
+    background-position: 0px  -35px;
+}
+
+/*second image */
+.section-2 {
+    background-color: black;
+    background-image: url(assets/Ryu.png);
+    background-position: 28px;
+}
+/*biar image bisa diatur */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}  
