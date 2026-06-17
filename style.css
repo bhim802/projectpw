@@ -21,6 +21,13 @@
     background-image: url(assets/ryu.png);
     background-position: 6px -5px ;
 }
+
+/*Third image */
+.section-3 {
+    background-color: black;
+    background-image: url(assets/ken.png);
+    background-position: 6px -5px ;
+}
 /*biar image bisa diatur */
 body {
     margin: 0;
