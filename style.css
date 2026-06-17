@@ -11,15 +11,15 @@
 /*first image */
 .section-1 {
     background-color: black;
-    background-image: url(assets/chunli3.png);
-    background-position: 0px  -35px;
+    background-image: url(assets/chunli.png);
+    background-position: 16.5px  -39px;
 }
 
 /*second image */
 .section-2 {
     background-color: black;
-    background-image: url(assets/Ryu.png);
-    background-position: 28px;
+    background-image: url(assets/ryu.png);
+    background-position: 6px -5px ;
 }
 /*biar image bisa diatur */
 body {
