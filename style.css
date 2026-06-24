@@ -159,4 +159,9 @@ body {
         position: relative;
         right: 100px;
     }
+
+    .geser-kanan {
+        position: relative;
+        left: 60px;
+    }
 }
