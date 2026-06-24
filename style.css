@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+/* instrument sherif */
+.instrument-serifs {
+    font-family: "Instrument Serif", serif;
+    font-style: normal;
+    font-size: 7rem;
+}
+
 /*pengaturan posisi image image */
 .bg-section {
     height: 100vh;
@@ -5,33 +14,115 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
+
 }
 
-/*first image */
+/*1 image */
 .section-1 {
     background-color: black;
     background-image: url(assets/chunli.png);
-    background-position: 16.5px  -39px;
+    background-position: 6px -5px;
 }
 
-/*second image */
+/*2 image */
 .section-2 {
     background-color: black;
     background-image: url(assets/ryu.png);
-    background-position: 6px -5px ;
+    background-position: 6px -5px;
 }
 
-/*Third image */
+/*3 image */
 .section-3 {
     background-color: black;
     background-image: url(assets/ken.png);
-    background-position: 6px -5px ;
+    background-position: 6px -5px;
 }
+
+/*4 image */
+.section-4 {
+    background-color: black;
+    background-image: url(assets/guile.png);
+    background-position: 6px -5px;
+}
+
+/*5 image */
+.section-5 {
+    background-color: black;
+    background-image: url(assets/kyo.png);
+    background-position: 6px -5px;
+}
+
+/*6 image */
+.section-6 {
+    background-color: black;
+    background-image: url(assets/mai.png);
+    background-position: 6px -5px;
+}
+
+/*7 image */
+.section-7 {
+    background-color: black;
+    background-image: url(assets/shop.png);
+    background-position: 6px -5px;
+}
+
+.jc-store {
+    color: rgb(0, 195, 255);
+}
+
+.navbar-custom  .nav-link:hover {
+    color: rgb(0, 195, 255)!important;
+    -webkit-transition: color 0,3 ease;
+    -moz-transition: color 0,3 ease;
+    -ms-transition: color 0,3 ease;
+    -o-transition: color 0,3 ease;
+    transition: color 0,3 ease;
+}
+
+.navbar-custom  .nav-link:hover {
+    color: rgb(0, 195, 255)!important;
+     -webkit-transition: color 0,3 ease;
+    -moz-transition: color 0,3 ease;
+    -ms-transition: color 0,3 ease;
+    -o-transition: color 0,3 ease;
+    transition: color 0,3 ease;
+}
+
+
 /*biar image bisa diatur */
 body {
     margin: 0;
     padding: 0;
     background-color: black;
 
-}  
+}
+
+/*joki central + carousel config*/
+.tc-center {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    /* vertikal */
+    justify-content: center;
+    /*horizontal */
+    width: 115%;
+    padding: 100px 10px;
+    /* Padding */
+}
+
+/*adjusment carousel first pagel*/
+@media (min-width: 768px) {
+    .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+/*adjusment text joki central*/
+@media (min-width: 768px) {
+    .geser-kiri {
+        position: relative;
+        right: 100px;
+
+    }
+}
