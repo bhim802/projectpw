@@ -18,46 +18,118 @@
     background-size: cover;
 }
 
+
+/* Untuk Tampilan dan Fitur Navbar */
+
+
 /* style untuk tiap section */
 .section-1 {
     background-color: black;
-    background-image: url(assets/chunli.png);
+    background-image: url(assets/gambar/chunli.png);
     background-position: 6px -5px;
 }
 
 .section-2 {
     background-color: black;
-    background-image: url(assets/ryu.png);
+    background-image: url(assets/gambar/ryu.png);
     background-position: 6px -5px;
+}
+
+
+.title-store {
+    margin-bottom:20px;
+    font-size: 4rem;
+    font-weight: 300;
+    color: white;
+    font-family: "Times New Roman", serif;
+    margin-top: 100px;
+}
+
+.desc-store {
+    margin-bottom:80px;
+    color: rgba(255, 255, 255, .8);
+    max-width: 650px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.desc-store span {
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    height: 130px;
+    margin-top: 90px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: 3px;
+    background: #4da3ff;
+}
+
+@media(max-width:768px) {
+
+    .title-store {
+        font-size: 2.5rem;
+    }
+
+    .feature-card {
+        height: 100px;
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
 }
 
 .section-3 {
     background-color: black;
-    background-image: url(assets/ken.png);
+    background-image: url(assets/gambar/ken.png);
     background-position: 6px -5px;
 }
 
 .section-4 {
     background-color: black;
-    background-image: url(assets/guile.png);
+    background-image: url(assets/gambar/guile.png);
     background-position: 6px -5px;
 }
 
 .section-5 {
     background-color: black;
-    background-image: url(assets/kyo.png);
+    background-image: url(assets/gambar/kyo.png);
     background-position: 6px -5px;
 }
 
 .section-6 {
     background-color: black;
-    background-image: url(assets/mai.png);
+    background-image: url(assets/gambar/mai.png);
     background-position: 6px -5px;
 }
 
 .section-7 {
     background-color: black;
-    background-image: url(assets/shop.png);
+    background-image: url(assets/gambar/shop.png);
     background-position: 6px -5px;
 }
 
@@ -110,8 +182,8 @@
         z-index: 9999;
         margin-top: 10px;
         box-shadow: 0px -10px 30px rgba(0, 195, 255, 0.1);
-       
-}
+
+    }
 
     .navbar-nav {
         flex-direction: column;
