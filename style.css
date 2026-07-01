@@ -23,6 +23,8 @@
     background-position: 6px -5px;
 }
 
+
+/* SECTION 2 */
 .section-2 {
     background-color: black;
     background-image: url(assets/gambar/ryu.png);
@@ -71,16 +73,310 @@
     }
 }
 
+
+/* SECTION 3 */
 .section-3 {
-    background-color: black;
-    background-image: url(assets/gambar/ken.png);
-    background-position: 6px -5px;
+
+    min-height: 100vh;
+
+    background-image: url("assets/gambar/ken.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
 }
 
+/* bagian kiri */
+.left-content {
+
+    padding-left: 40px;
+
+}
+
+.why-img {
+
+    width: 100%;
+
+    max-width: none;
+
+    margin-top: -50px;
+
+}
+
+/* bagian tombol */
+.btn-joki3 {
+
+    width: 180px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 14px;
+
+    color: white !important;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    position: relative;
+
+    overflow: hidden;
+
+    transition: .3s ease;
+
+}
+
+.btn-joki3:hover {
+
+    color: white;
+
+    border-color: #44a9ff;
+
+    box-shadow:
+        0 0 15px rgba(68, 169, 255, .45);
+
+}
+
+.btn-joki3::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:20px;
+
+    right:20px;
+
+    bottom:8px;
+
+    height:2px;
+
+    background:#44a9ff;
+
+}
+/* card yang kanan */
+
+.feature-card3 {
+
+    width: 100%;
+
+    height: 120px;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(8px);
+
+    margin-bottom: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 35px;
+
+}
+
+.feature-content {
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+.feature-content h2 {
+
+    color: white;
+
+    font-size: 2rem;
+
+    font-weight: 600;
+
+}
+
+.feature-content::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -5px;
+
+    width: 100%;
+
+    height: 3px;
+
+    background: #44a9ff;
+
+}
+
+/* RESPONSIVE UNTUK SECTION 3 */
+
+@media(max-width:992px) {
+
+    .left-content {
+
+        text-align: center;
+
+        padding-left: 0;
+
+    }
+
+    .why-img {
+
+        width: 100%;
+
+        max-width: 500px;
+
+        margin-top: 0;
+
+    }
+
+
+    .feature-card3 {
+
+        margin-top: 20px;
+
+    }
+
+}
+
+/* SECTION 4 */
+
 .section-4 {
-    background-color: black;
-    background-image: url(assets/gambar/guile.png);
-    background-position: 6px -5px;
+
+    background-image: url("assets/gambar/guile.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+}
+
+/* TITLE TESTIMONI  */
+.testimonial-title {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.testimonial-wrapper {
+
+    background: rgba(255, 255, 255, .06);
+
+    backdrop-filter: blur(5px);
+
+    border-radius: 25px;
+
+    padding: 45px;
+
+}
+
+/* CARD */
+
+.testimonial-card {
+
+    background: rgba(255, 255, 255, .20);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 10px;
+
+    padding: 18px;
+
+    transition: .3s;
+
+}
+
+.testimonial-card h4 {
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+.testimonial-card p {
+
+    color: #ececec;
+
+    font-size: 15px;
+
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+.testimonial-card::after {
+
+    content: "";
+
+    display: block;
+
+    width: 100%;
+
+    height: 2px;
+
+    background: #d0d0d0;
+
+}
+
+/* CAPTION */
+
+.bottom-line {
+
+    width: 160px;
+
+    height: 2px;
+
+    background: #808080;
+
+    margin-top: 15px;
+
+}
+
+/* RESPONSIVITAS */
+
+@media(max-width:992px) {
+
+    .testimonial-wrapper {
+
+        padding: 25px;
+
+    }
+
+    .testimonial-card {
+
+        margin-bottom: 15px;
+
+    }
+
 }
 
 .section-5 {
@@ -362,20 +658,20 @@ img {
 
 .scale-up-center:hover {
     transform: scale(1.1) !important;
-   
+
 }
 
 .small-size {
     position: relative;
     width: 70% !important;
-   top: 120px;
-   left: 155px;
-    
+    top: 120px;
+    left: 155px;
+
 }
 
 .pay-logos {
     position: relative;
     width: 25%;
     left: 80%;
-    
+
 }
