@@ -12,15 +12,11 @@
 </head>
 
 <body>
-    <section class="bg-section section-1">
+    <!--first page-->
+    <section id="about" class="bg-section section-1">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark ps-1 pt-4 pb-4 ">
+            <nav class="navbar navbar-expand-lg navbar-custom pt-4 pb-4 ">
                 <div class="container-xxl">
-                    <a class="navbar-brand" href="#intro">
-                        <span class="jc-store fw-bold fs-3">
-                            JC STORE
-                        </span>
-                    </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -31,26 +27,27 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav navbar-custom ms-auto mb-2 mb-lg-0">
                             <li class="nav-item ps-2">
-                                <a class="nav-link d-flex flex-column text-center active text-white" aria-current="page"
-                                    href="#"><i class="fas fa-info fa-lg my-3"></i><span class="small">About</span></a>
+                                <a class="nav-link d-flex flex-column text-center text-white  " aria-current="page"
+                                    href="#about"><i class="fas fa-info fa-lg my-3"></i><span
+                                        class="small">About</span></a>
                             </li>
                             <li class="nav-item ps-2">
-                                <a class="nav-link d-flex flex-column text-center text-white" aria-current="page"
+                                <a class="nav-link d-flex flex-column text-center text-white " aria-current="page"
                                     href="#"><i class="fas fa-shopping-cart fa-lg my-3"></i><span
                                         class="small">Shop</span></a>
                             </li>
                             <li class="nav-item ps-2">
-                                <a class="nav-link d-flex flex-column text-center text-white" aria-current="page"
-                                    href="#"><i class="fas fa-briefcase fa-lg my-3"></i><span
+                                <a class="nav-link d-flex flex-column text-center text-white " aria-current="page"
+                                    href="#benefits"><i class="fas fa-briefcase fa-lg my-3"></i><span
                                         class="small">Benefits</span></a>
                             </li>
                             <li class="nav-item ps-2">
-                                <a class="nav-link d-flex flex-column text-center text-white" aria-current="page"
+                                <a class="nav-link d-flex flex-column text-center text-white  " aria-current="page"
                                     href="#"><i class="fas fa-user-tie fa-lg my-3"></i><span
                                         class="small">Crew</span></a>
                             </li>
                             <li class="nav-item ps-2">
-                                <a class="nav-link d-flex flex-column text-center text-white" aria-current="page"
+                                <a class="nav-link d-flex flex-column text-center text-white " aria-current="page"
                                     href="#"><i class="fas fa-bell fa-lg my-3"></i><span
                                         class="small">Testimoni</span></a>
                             </li>
@@ -60,154 +57,114 @@
             </nav>
         </div>
 
-        <!-- SECTION 1 / PAGE 1 -->
+
+
         <section>
             <div class="container pt-5">
-                <div class="row align-items-center justify-content-center text-center tc-center">
-                    <div class="col-md-6 text-md-start py-5 mb-4 mb-md-0">
-                        <img src="assets/gambar/joki-central.png" class="img-fluid geser-kiri" alt="joki central">
-                        <p class="lead my-4 fs-3 ps-4 text-white">"best carry store of all time"</p>
+
+                <div class="row text-center tc-center align-items-center ">
+                    <div class=" col-md-5 text-md-start py-4 mb-4 mb-md-0 ">
+                        <img src="assets/gambar/joki-central.png" class="img-fluid geser-kiri scale-up-center"
+                            alt="joki central">
+
                     </div>
 
-                    <div class="col-md-6">
-                        <div id="carouselJoki" class="carousel geser-kanan slide shadow-lg" data-bs-ride="carousel">
-                            <div class="carousel-caption">
-                                <button type="button" data-bs-target="#carouselJoki" data-bs-slide-to="0" class="active"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselJoki" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselJoki" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                            </div>
 
-                            <div class="carousel-inner rounded-3 overflow-hidden">
-                                <div class="carousel-item active">
-                                    <img src="assets/gambar/ryu.png" class="d-block w-100" alt="Promo 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/gambar/ryu.png" class="d-block w-100" alt="Promo 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/gambar/ryu.png" class="d-block w-100" alt="Promo 3">
-                                </div>
-                            </div>
 
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselJoki"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselJoki"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+
+                    <div class="col-md-7 text-center position-relative">
+                        <input type="radio" name="slider" id="item-1" checked>
+                        <input type="radio" name="slider" id="item-2">
+                        <input type="radio" name="slider" id="item-3">
+                        <div class="cards">
+                            <label class="card" for="item-1" id="as-1">
+                                <img src="assets/gambar/chunli.png" alt="promote">
+                            </label>
+                            <label class="card" for="item-2" id="as-2">
+                                <img src="assets/gambar/chunli.png" alt="promote">
+                            </label>
+                            <label class="card" for="item-3" id="as-3">
+                                <img src="assets/gambar/chunli.png" alt="promote">
+                            </label>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="container">
+                <div class="pay-logos">
+                    <img src="assets/gambar/pay-logo.png" class="img-fluid" alt="pay-logo">
+                </div>
+            </div>
+
+
+
+
         </section>
     </section>
 
-    <!-- SECTION 2 / PAGE 2-->
-    <section class="bg-section section-2">
+    <!--second page-->
+    <section id="benefits" class="bg-section section-2">
         <div class="container">
-            <nav class="navbar navbar-expand-lg">
-            </nav>
             <div class="container">
-
-                <div class="row mb-5">
-                    <div class="col-lg-8">
-                        <h1 class="title-store">
-                            Keunggulan JC Store
-                        </h1>
-
-                        <p class="desc-store">
-                            Kami Menyediakan Kebutuhan Game Anda, Untuk Menaikan Rank Anda Dengan Cepat Dan Pastinya
-                            Aman 100%.
-                            Dengan Harga yang Terjangkau Kami Menjamin Kualitas,
-                            <span>"Kami Adalah Solusi Dari Joki Rank Anda"</span>
-                        </p>
+                <div class="row mb-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 ">
+                        <img src="assets/gambar/jc-advantage.png" class="img-fluid " alt="joki central">
                     </div>
                 </div>
 
                 <div class="row g-4">
-
                     <div class="col-md-3">
                         <div class="feature-card text-uppercase">
                             Cepat &amp;<br>Terpercaya
                         </div>
                     </div>
-
                     <div class="col-md-3 ">
                         <div class="feature-card h-100 text-uppercase">
                             Murah &amp; Aman
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="feature-card h-100 text-uppercase">
                             Open 24<br>Hour
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="feature-card text-uppercase">
                             3x Lose +1<br>Star
                         </div>
                     </div>
-
                 </div>
 
+                <div class=" small-size">
+                    <img src="assets/gambar/rank-advantage.png " class="small-size" alt="joki central">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 3 / PAGE 3 -->
+
+
+
     <section class="bg-section section-3">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-            </nav>
-        </div>
+        <div class="container"></div>
     </section>
-
-    <!-- SECTION 4 / PAGE 4 -->
     <section class="bg-section section-4">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-            </nav>
-        </div>
+        <div class="container"></div>
     </section>
-
-    <!-- SECTION 5 / PAGE 5-->
     <section class="bg-section section-5">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-            </nav>
-        </div>
+        <div class="container"></div>
     </section>
-
-    <!-- SECTION 6 / PAGE 6 -->
     <section class="bg-section section-6">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-            </nav>
-        </div>
+        <div class="container"></div>
     </section>
-
-    <!-- SECTION 7 / PAGE 7-->
     <section class="bg-section section-7">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-            </nav>
-        </div>
+        <div class="container"></div>
     </section>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>
