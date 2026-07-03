@@ -14,6 +14,10 @@
 </head>
 
 <body>
+    <input type="radio" name="nav-trigger" id="trigger-about" checked style="display:none;">
+    <input type="radio" name="nav-trigger" id="trigger-benefits" style="display:none;">
+    <input type="radio" name="nav-trigger" id="trigger-why" style="display:none;">
+
     <!--FIRST PAGE-->
     <section id="about" class="bg-section section-1">
         <div class="container">
@@ -26,7 +30,7 @@
                         <i class="fas fa-bars text-white "></i>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse anim-downto anim-delay2" id="navbarSupportedContent">
                         <ul class="navbar-nav navbar-custom ms-auto mb-2 mb-lg-0">
                             <li class="nav-item ps-2">
                                 <a class="nav-link d-flex flex-column text-center text-white  " aria-current="page"
@@ -40,23 +44,23 @@
                             </li>
                             <li class="nav-item ps-2">
                                 <a class="nav-link d-flex flex-column text-center text-white " aria-current="page"
-                                    href="#"><i class="fas fa-shopping-cart fa-lg my-3"></i><span
-                                        class="small">Why</span></a>
+                                    href="#why"><i class="fas fa-bell fa-lg my-3"></i><span
+                                        class="small">Why?</span></a>
                             </li>
                             <li class="nav-item ps-2">
                                 <a class="nav-link d-flex flex-column text-center text-white " aria-current="page"
-                                    href="#"><i class="fas fa-shopping-cart fa-lg my-3"></i><span
-                                        class="small">Shop</span></a>
+                                    href="#testi"><i class="fas fa-shopping-cart fa-lg my-3"></i><span
+                                        class="small">Testimoni</span></a>
                             </li>
                             <li class="nav-item ps-2">
                                 <a class="nav-link d-flex flex-column text-center text-white  " aria-current="page"
-                                    href="#"><i class="fas fa-user-tie fa-lg my-3"></i><span
+                                    href="#crew"><i class="fas fa-user-tie fa-lg my-3"></i><span
                                         class="small">Crew</span></a>
                             </li>
                             <li class="nav-item ps-2">
                                 <a class="nav-link d-flex flex-column text-center text-white " aria-current="page"
-                                    href="#"><i class="fas fa-bell fa-lg my-3"></i><span
-                                        class="small">Testimoni</span></a>
+                                    href="#shop"><i class="fas fa-shopping-cart fa-lg my-3"></i><span
+                                        class="small">Shop</span></a>
                             </li>
                         </ul>
                     </div>
@@ -69,7 +73,7 @@
         <section>
             <div class="container pt-5">
 
-                <div class="row text-center tc-center align-items-center ">
+                <div class="row text-center tc-center align-items-center konten-s2 ">
                     <div class=" col-md-5 text-md-start py-4 mb-4 mb-md-0 ">
                         <img src="assets/gambar/joki-central.png" class="img-fluid geser-kiri scale-up-center"
                             alt="joki central">
@@ -93,13 +97,16 @@
                             <label class="card" for="item-3" id="as-3">
                                 <img src="assets/gambar/chunli.png" alt="promote">
                             </label>
+                            <label class="card" for="item-3" id="as-3">
+                                <img src="assets/gambar/chunli.png" alt="promote">
+                            </label>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="container">
-                <div class="pay-logos">
+                <div class="pay-logos align-items-center anim-downto anim-delay">
                     <img src="assets/gambar/pay-logo.png" class="img-fluid" alt="pay-logo">
                 </div>
             </div>
@@ -114,37 +121,37 @@
     <section id="benefits" class="bg-section section-2">
         <div class="container">
             <div class="container">
-                <div class="row mb-5 align-items-center justify-content-center">
-                    <div class="col-lg-8 ">
-                        <img src="assets/gambar/jc-advantage.png" class="img-fluid " alt="joki central">
+                <div class="row mb-5 align-items-center justify-content-center  ">
+                    <div class="col-lg-8 image-advantage">
+                        <img src="assets/gambar/jc-advantage.png" class="img-fluid scale-up-center " alt="joki central">
                     </div>
                 </div>
 
-                <div class="row g-4">
-                    <div class="col-md-3">
-                        <div class="feature-card text-uppercase">
+                <div class="row g-4 ">
+                    <div class="col-md-3 scale-up-center">
+                        <div class="feature-card text-uppercase show-card scale-up-center">
                             Cepat &amp;<br>Terpercaya
                         </div>
                     </div>
-                    <div class="col-md-3 ">
-                        <div class="feature-card h-100 text-uppercase">
+                    <div class="col-md-3 scale-up-center">
+                        <div class="feature-card h-100 text-uppercase show-card scale-up-center">
                             Murah &amp; Aman
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="feature-card h-100 text-uppercase">
+                    <div class="col-md-3 scale-up-center">
+                        <div class="feature-card h-100 text-uppercase show-card scale-up-center">
                             Open 24<br>Hour
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="feature-card text-uppercase">
+                    <div class="col-md-3 scale-up-center">
+                        <div class="feature-card text-uppercase show-card scale-up-center ">
                             3x Lose +1<br>Star
                         </div>
                     </div>
                 </div>
 
                 <div class=" small-size">
-                    <img src="assets/gambar/rank-advantage.png " class="small-size" alt="joki central">
+                    <img src="assets/gambar/rank-advantage.png " class="small-size scale-up-center" alt="joki central">
                 </div>
             </div>
         </div>
@@ -153,7 +160,7 @@
 
 
     <!-- THIRD PAGE -->
-    <section class="bg-section section-3">
+    <section id="why" class="bg-section section-3">
 
         <div class="container h-100">
 
@@ -161,16 +168,18 @@
 
                 <!-- LEFT -->
                 <div class="col-lg-8 left-content">
-
-                    <img src="assets/gambar/text-section-3.png" class="img-fluid why-img" alt="Why Should Us">
+                    <div class="scale-up-center">
+                        <img src="assets/gambar/text-section-3.png" class="img-fluid why-img image-advantage3 "
+                            alt="Why Should Us">
+                    </div>
 
                     <div class="mt-4">
 
-                        <h4 class="text-white text-uppercase ">
+                        <h4 class="text-white text-uppercase  show-card3">
                             Ready to Push Your Rank?
                         </h4>
 
-                        <button class="btn btn-joki3">
+                        <button class="btn btn-joki3 show-card3">
 
                             <i class="bi bi-controller me-2 "></i>
 
@@ -184,21 +193,21 @@
 
                 <!-- RIGHT -->
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 image-advantage3">
 
-                    <div class="feature-card3">
+                    <div class="feature-card3 scale-up-center">
                         <div class="feature-content text-uppercase">
                             <h2>Fast<br>Process</h2>
                         </div>
                     </div>
 
-                    <div class="feature-card3">
+                    <div class="feature-card3 scale-up-center">
                         <div class="feature-content text-uppercase">
                             <h2> Account<br>Safe</h2>
                         </div>
                     </div>
 
-                    <div class="feature-card3">
+                    <div class="feature-card3 scale-up-center">
                         <div class="feature-content text-uppercase">
                             <h2>Professional<br>Team</h2>
                         </div>
@@ -215,15 +224,15 @@
 
 
     <!-- FOURTH PAGE -->
-    <section class="section-4 py-5">
+    <section id="testi" class="section-4 py-5">
 
         <div class="container">
 
             <!-- Judul -->
-            <div class="row">
-                <div class="col text-center mb-5">
+            <div class="row image-advantage4">
+                <div class="col text-center mb-5 ">
 
-                    <img src="assets/gambar/testi text img.png" class="testimonial-title img-fluid" alt="Testimoni">
+                    <img src="assets/gambar/testi-text-img.png" class="testimonial-title img-fluid " alt="Testimoni">
 
                 </div>
             </div>
@@ -231,7 +240,7 @@
             <!-- Container -->
             <div class="testimonial-wrapper">
 
-                <div class="row justify-content-center">
+                <div class="row justify-content-center image-advantage4">
 
                     <!-- Kiri -->
                     <div class="col-lg-8">
@@ -246,7 +255,7 @@
                                 </div>
 
                                 <div class="col-lg-4 col-md-6">
-                                    <div class="testimonial-card">
+                                    <div class="testimonial-card ">
                                         <h4>Ananta</h4>
                                         <p>Tempat Joki terbaik</p>
                                     </div>
@@ -313,17 +322,17 @@
 
                         <div class="comment-form-section mt-5 ps-2">
                             <h3 class="text-white mb-4 text-uppercase fw-light">Leave a Comment</h4>
-                            <form action="#" method="POST">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control comment-input" id="name"
-                                        placeholder="Your Name" required autocomplete="off">
-                                </div>
-                                <div class="mb-3">
-                                    <textarea class="form-control comment-input" id="comment" rows="4"
-                                        placeholder="Write your comment here..." required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-submit-comment text-uppercase">Submit</button>
-                            </form>
+                                <form action="#" method="POST">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control comment-input" id="name"
+                                            placeholder="Your Name" required autocomplete="off">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control comment-input" id="comment" rows="4"
+                                            placeholder="Write your comment here..." required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-submit-comment text-uppercase">Submit</button>
+                                </form>
                         </div>
 
                     </div>
@@ -335,14 +344,13 @@
         </div>
 
     </section>
-
-    <section class="bg-section section-5">
+    <section id="crew" class="bg-section section-6">
         <div class="container"></div>
     </section>
-    <section class="bg-section section-6">
+    <section id="shop" class="bg-section section-7">
         <div class="container"></div>
     </section>
-    <section class="bg-section section-7">
+    <section class="bg-section ">
         <div class="container"></div>
     </section>
 

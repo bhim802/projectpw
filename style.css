@@ -289,7 +289,7 @@
     position: relative;
     bottom: 40PX;
 
-    background: rgba(255, 255, 255, .06);
+    background: rgba(0, 0, 0, 0.411);
 
     backdrop-filter: blur(5px);
 
@@ -368,7 +368,7 @@
 @media(max-width:992px) {
 
     .testimonial-wrapper {
-
+        
         padding: 25px;
 
     }
@@ -541,6 +541,11 @@
     .bg-section {
         padding-left: 120px !important;
     }
+    
+    .nav {
+        animation: anim 1s forwards 2s;
+        
+}
 }
 
 /* Joki Central text config */
@@ -706,16 +711,16 @@ img {
 
 .comment-input:focus {
     background: rgba(255, 255, 255, 0.25) !important;
-    border-color: #44a9ff !important;
+    border-color: #ffffff77 !important;
     box-shadow: 0 0 10px rgba(68, 169, 255, 0.3) !important;
     outline: none;
 }
 
 
 .btn-submit-comment {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.486) !important;
+    backdrop-filter: blur(1px) ;
+    border: 1px solid rgb(255, 255, 255) !;
     border-radius: 1px;
     color: white;
     font-weight: 700;
@@ -726,8 +731,109 @@ img {
 }
 
 .btn-submit-comment:hover {
-    color: white;
-    border-color: #44a9ff;
-    box-shadow: 0 0 15px rgba(68, 169, 255, 0.45);
+    color: white !important;
+    border-color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.205);
     background: rgba(68, 169, 255, 0.2);
 }
+
+
+.advantage-card {
+    position: relative;
+    bottom: 85px;
+}
+
+
+@keyframes munculDariBawah {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);    
+    }
+
+    
+}
+
+.anim-downto {
+    opacity: 0; 
+    
+    
+    animation-name: munculDariBawah;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    
+    
+    animation-fill-mode: forwards; 
+}
+
+.anim-delay {
+    animation-delay: 1.2s;
+    
+}
+
+.anim-delay2 {
+    animation-delay: 1s;
+    
+}
+
+/*ANIM DOWN TO UP */
+
+
+/* sec2 */
+
+
+
+@keyframes munculSekali{
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#benefits:target .show-card, 
+#benefits:target .image-advantage,
+#why:target .show-card3,
+#why:target .image-advantage3,
+#testi:target .show-card4,
+#testi:target .image-advantage4 {
+    animation: munculSekali 1s ease-out;
+    animation-fill-mode: forwards;
+    
+}
+
+#benefits .show-card {
+    transition-delay: 0.5s;
+}
+
+#benefits .image-advantage {
+    transition-delay: 0.9s;
+}
+
+
+
+/*sec3*/
+
+
+#why .show-card3{
+    transition-delay: 0.5s;
+}
+
+#why .image-advantage3{
+    transition-delay: 0.9s;
+}
+
+#testi .show-card4{
+    transition-delay: 0.5s;
+}
+
+#testi .image-advantage4{
+    transition-delay: 0.9s;
+}
+
