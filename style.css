@@ -122,7 +122,6 @@
 
     background: rgba(255, 255, 255, .15);
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
 
     border: 1px solid rgba(255, 255, 255, .18);
     border-radius: 14px;
@@ -152,23 +151,24 @@
 
 }
 
-.btn-joki3::after{
+.btn-joki3::after {
 
-    content:"";
+    content: "";
 
-    position:absolute;
+    position: absolute;
 
-    left:20px;
+    left: 20px;
 
-    right:20px;
+    right: 20px;
 
-    bottom:8px;
+    bottom: 8px;
 
-    height:2px;
+    height: 2px;
 
-    background:#44a9ff;
+    background: #44a9ff;
 
 }
+
 /* card yang kanan */
 
 .feature-card3 {
@@ -286,6 +286,8 @@
 
 
 .testimonial-wrapper {
+    position: relative;
+    bottom: 40PX;
 
     background: rgba(255, 255, 255, .06);
 
@@ -372,6 +374,8 @@
     }
 
     .testimonial-card {
+        position: relative;
+        
 
         margin-bottom: 15px;
 
@@ -663,9 +667,9 @@ img {
 
 .small-size {
     position: relative;
-    width: 70% !important;
-    top: 120px;
-    left: 155px;
+    width: 60% !important;
+    top: 60px;
+    left: 190px;
 
 }
 
@@ -674,4 +678,56 @@ img {
     width: 25%;
     left: 80%;
 
+}
+
+
+.comment-form-section {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.comment-input {
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1px;
+    color: white !important;
+    padding: 12px 18px;
+    transition: all 0.3s ease;
+}
+
+
+.comment-input::placeholder {
+    color: rgba(236, 236, 236, 0.6);
+    font-size: 15px;
+}
+
+
+.comment-input:focus {
+    background: rgba(255, 255, 255, 0.25) !important;
+    border-color: #44a9ff !important;
+    box-shadow: 0 0 10px rgba(68, 169, 255, 0.3) !important;
+    outline: none;
+}
+
+
+.btn-submit-comment {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1px;
+    color: white;
+    font-weight: 700;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    
+}
+
+.btn-submit-comment:hover {
+    color: white;
+    border-color: #44a9ff;
+    box-shadow: 0 0 15px rgba(68, 169, 255, 0.45);
+    background: rgba(68, 169, 255, 0.2);
 }
