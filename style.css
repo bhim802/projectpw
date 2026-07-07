@@ -74,6 +74,86 @@
 }
 
 
+/* GAMES CONTENT (dipakai di section shop / section-7) */
+.games-title {
+    font-family: "Instrument Serif", serif;
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.games-subtitle {
+    color: #cfcfcf;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.game-card {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #111;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+}
+
+.game-card .game-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(168, 85, 247, 0.95) 0%, rgba(168, 85, 247, 0.65) 100%);
+}
+
+.game-overlay h5 {
+    color: #0a0a0a;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.game-overlay i {
+    color: rgba(10, 10, 10, 0.6);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .games-title {
+        font-size: 2rem;
+    }
+
+    .game-card {
+        height: 160px;
+    }
+
+    .game-overlay {
+        padding: 12px 15px;
+    }
+
+    .game-overlay h5 {
+        font-size: 0.9rem;
+    }
+}
+
+
 /* SECTION 3 */
 .section-3 {
 
@@ -368,14 +448,14 @@
 @media(max-width:992px) {
 
     .testimonial-wrapper {
-        
+
         padding: 25px;
 
     }
 
     .testimonial-card {
         position: relative;
-        
+
 
         margin-bottom: 15px;
 
@@ -397,8 +477,11 @@
 
 .section-7 {
     background-color: black;
-    background-image: url(assets/gambar/shop.png);
-    background-position: 6px -5px;
+    background-image: radial-gradient(circle at center, rgba(168, 85, 247, 0.35) 0%, rgba(0, 0, 0, 0) 60%), url(assets/gambar/shop.png);
+    background-position: center, 6px -5px;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    align-items: center;
 }
 
 /* Layar Hp */
@@ -541,11 +624,11 @@
     .bg-section {
         padding-left: 120px !important;
     }
-    
+
     .nav {
         animation: anim 1s forwards 2s;
-        
-}
+
+    }
 }
 
 /* Joki Central text config */
@@ -719,7 +802,7 @@ img {
 
 .btn-submit-comment {
     background: rgba(255, 255, 255, 0.486) !important;
-    backdrop-filter: blur(1px) ;
+    backdrop-filter: blur(1px);
     border: 1px solid rgb(255, 255, 255) !;
     border-radius: 1px;
     color: white;
@@ -727,7 +810,7 @@ img {
     padding: 5px 10px;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    
+
 }
 
 .btn-submit-comment:hover {
@@ -749,34 +832,35 @@ img {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
-        transform: translateY(0);    
+        transform: translateY(0);
     }
 
-    
+
 }
 
 .anim-downto {
-    opacity: 0; 
-    
-    
+    opacity: 0;
+
+
     animation-name: munculDariBawah;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
-    
-    
-    animation-fill-mode: forwards; 
+
+
+    animation-fill-mode: forwards;
 }
 
 .anim-delay {
     animation-delay: 1.2s;
-    
+
 }
 
 .anim-delay2 {
     animation-delay: 1s;
-    
+
 }
 
 /*ANIM DOWN TO UP */
@@ -786,18 +870,19 @@ img {
 
 
 
-@keyframes munculSekali{
+@keyframes munculSekali {
     from {
         opacity: 0;
         transform: translateY(60px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-#benefits:target .show-card, 
+#benefits:target .show-card,
 #benefits:target .image-advantage,
 #why:target .show-card3,
 #why:target .image-advantage3,
@@ -805,7 +890,7 @@ img {
 #testi:target .image-advantage4 {
     animation: munculSekali 1s ease-out;
     animation-fill-mode: forwards;
-    
+
 }
 
 #benefits .show-card {
@@ -821,19 +906,18 @@ img {
 /*sec3*/
 
 
-#why .show-card3{
+#why .show-card3 {
     transition-delay: 0.5s;
 }
 
-#why .image-advantage3{
+#why .image-advantage3 {
     transition-delay: 0.9s;
 }
 
-#testi .show-card4{
+#testi .show-card4 {
     transition-delay: 0.5s;
 }
 
-#testi .image-advantage4{
+#testi .image-advantage4 {
     transition-delay: 0.9s;
 }
-
