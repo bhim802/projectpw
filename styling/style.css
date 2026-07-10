@@ -1,3 +1,16 @@
+@import url(scale.css);
+@import url(navbar.css);
+@import url(bg-section.css);
+@import url(card.css);
+@import url(carousel.css);
+@import url(comment.css);
+@import url(animation.css);
+@import url(adjustment.css);
+@import url(game-shop.css);
+@import url(font.css);
+
+
+
 * {
     box-sizing: border-box;
 }

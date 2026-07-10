@@ -10,7 +10,7 @@
  /* style untuk tiap section */
  .section-1 {
      background-color: black;
-     background-image: url(../assets/bg-image/chunli.png);
+     background-image: url(../bg-image/chunli.png);
      background-position: 6px -5px;
  }
 
@@ -18,14 +18,14 @@
  /* SECTION 2 */
  .section-2 {
      background-color: black;
-     background-image: url(/assets/bg-image/Ryu.png);
+     background-image: url(../bg-image/ryu.png);
      background-position: 6px -5px;
  }
 
  /* SECTION 3 */
  .section-3 {
      min-height: 100vh;
-     background-image: url(../assets/bg-image/ken.png);
+     background-image: url(../bg-image/ken.png);
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 
 
  .section-paqui {
-     background-image: url(../PROJECTPW/assets/bg-image/paqui.png);
+     background-image: url(../bg-image/paqui.png);
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
@@ -48,19 +48,19 @@
 
  .section-5 {
      background-color: black;
-     background-image: url(../assets/bg-image/kyo.png);
+     background-image: url();
 
  }
 
  .section-6 {
      background-color: black;
-     background-image: url(../assets/bg-image/mai.png);
+     background-image: url(../bg-image/mai.png);
      background-position: 6px -5px;
  }
 
  .section-7 {
      background-color: black;
-     background-image: url(../assets/bg-image/shop.png);
+     background-image: url(../bg-image/shop.png);
      background-position: center, 6px -5px;
      background-repeat: no-repeat, no-repeat;
      display: flex;
