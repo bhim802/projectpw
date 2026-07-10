@@ -135,7 +135,7 @@ $game_dipilih = isset($_GET['game']) ? $_GET['game'] : '';
                                 
                                 <div class="d-grid button-image">
                                     <button type="submit" class="btn btn-order btn-sm py-2"> 
-                                    <img src="/projectpw/assets/payment-logo/order-now.png" alt="pay-logo" class="img-btn">
+                                    <img src="/PROJECTPW/assets/payment-logo/order-now.png" alt="pay-logo" class="img-btn">
                                 </button>
                                 </div>
 
