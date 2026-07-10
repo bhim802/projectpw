@@ -16,7 +16,7 @@ body {
 }
 
 .bgr-image {
-    background-image: url(/bg-image/shop.png);
+    background-image: url(../../bg-image/shop.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
