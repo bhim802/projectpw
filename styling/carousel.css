@@ -102,3 +102,7 @@ img {
 
    
 }
+
+input[name="nav-trigger"] {
+    display: none;
+}

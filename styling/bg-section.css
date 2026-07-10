@@ -18,7 +18,7 @@
  /* SECTION 2 */
  .section-2 {
      background-color: black;
-     background-image: url(../assets/bg-image/ryu.png);
+     background-image: url(/assets/bg-image/Ryu.png);
      background-position: 6px -5px;
  }
 
@@ -34,22 +34,22 @@
 
  }
 
- /* SECTION 4 */
 
- .imager-4 {
-    background-color: black;
-    background-image: url(/assets/bg-image/paqui.png);
+
+ .section-paqui {
+     background-image: url(../PROJECTPW/assets/bg-image/paqui.png);
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
+     min-height: 100vh;
      display: flex;
      align-items: center;
  }
- 
+
  .section-5 {
      background-color: black;
      background-image: url(../assets/bg-image/kyo.png);
-    
+
  }
 
  .section-6 {
@@ -158,7 +158,7 @@
      .section-1,
      .section-2,
      .section-3,
-     .section-4,
+     .section-paqui,
      .section-5,
      .section-6,
      .section-7 {

@@ -15,8 +15,8 @@ body {
     background-color: black;
 }
 
-.bg-image {
-    background-image: url(/projectpw/assets/gambar/shop.png);
+.bgr-image {
+    background-image: url(/projectpw/assets/bg-image/shop.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
